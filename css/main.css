@@ -308,4 +308,54 @@ ion-icon {
   width: 90%;
   height: 90%;
 }
+
+footer {
+  background-color: #4A9E00;
+  display: block;
+  height: 15rem;
+  width: 100%;
+  color: #ebe8e8;
+}
+
+footer p {
+  text-align: right;
+  margin-right: 3rem;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+footer .address {
+  text-align: right;
+  margin-right: 3rem;
+}
+
+#footer-nav {
+  list-style-type: none;
+  padding-top: 2rem;
+  overflow: hidden;
+  background-color: transparent;
+  margin-top: 3.5rem;
+  text-align: center;
+}
+
+#footer-nav li {
+  display: inline-block;
+  margin: 0.5rem;
+  position: relative;
+}
+
+#footer-nav li a {
+  display: block;
+  text-align: center;
+  padding: 14px 13px;
+  text-decoration: none;
+  margin: 0 0.5rem 0;
+  text-transform: uppercase;
+  width: 4rem;
+  color: #ebe8e8;
+}
+
+#footer-nav li a:hover {
+  color: white;
+}
 /*# sourceMappingURL=main.css.map */
