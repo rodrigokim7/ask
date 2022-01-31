@@ -22,7 +22,7 @@
   margin-bottom: 8rem;
 }
 
-.navbar {
+#navbar {
   list-style-type: none;
   margin-right: 4rem;
   padding: 0;
@@ -30,16 +30,7 @@
   background-color: transparent;
   float: right;
   margin-top: 1.5rem;
-
-  .icon {
-    display: none;
-    @media screen and (max-width: 800px) {
-      float: right;
-      display: block;
-    }
-    
-  }
-
+  
   li {
     display: inline-block;
     margin: 0.5rem;
@@ -63,34 +54,13 @@
       display: block;
       color: #494d4a;
       text-align: center;
-      padding: 0.8rem 0.6rem;
+      padding: 14px 16px;
       text-decoration: none;
       margin: 0 0.5rem 0;
       text-transform: uppercase; 
-      width: 4rem;     
-      @media screen and (max-width: 800px) {
-        display: none; 
-      }  
-
-      
+      width: 4rem;         
     }
     
-  }
-  &.responsive {
-    @media screen and (max-width: 800px) {position: relative;}
-    .icon {
-      @media screen and (max-width: 800px) {
-        position: absolute;
-        right: 0;
-        top: 0;}      
-    }
-    a {
-      @media screen and (max-width: 800px) {
-        float: none;
-        display: block;
-        text-align: left;
-      }
-    }
   }
 }
 
@@ -308,5 +278,3 @@ footer {
     
   }
 }
-
-
