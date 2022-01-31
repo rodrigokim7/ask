@@ -1,0 +1,311 @@
+.nav-container {
+  display: flexbox;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.logo {
+  display: inline-block;
+  margin-left: 3rem;
+  margin-top: 2rem;
+}
+
+.logo img {
+  max-width: 25rem;
+}
+
+#logobig {
+  width: 100%;
+  height: 35rem;
+  background: url(../images/logomd.png) no-repeat center center;
+  background-size: contain;
+  margin-top: 7rem;
+  margin-bottom: 8rem;
+}
+
+#navbar {
+  list-style-type: none;
+  margin-right: 4rem;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+  float: right;
+  margin-top: 1.5rem;
+}
+
+#navbar li {
+  display: inline-block;
+  margin: 0.5rem;
+  position: relative;
+}
+
+#navbar li::after {
+  content: '';
+  display: block;
+  height: 3px;
+  margin: .5rem auto;
+  background-color: #4A9E00;
+  position: absolute;
+  top: 2.5rem;
+  width: 0%;
+  -webkit-transition: all ease-in-out 250ms;
+  transition: all ease-in-out 250ms;
+}
+
+#navbar li:hover::after {
+  width: 100%;
+}
+
+#navbar li a {
+  display: block;
+  color: #494d4a;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin: 0 0.5rem 0;
+  text-transform: uppercase;
+  width: 4rem;
+}
+
+.company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 7rem;
+  text-align: center;
+}
+
+.company .item {
+  width: 60%;
+  text-align: center;
+  margin: 3rem auto;
+}
+
+.company .p1 p {
+  margin-top: 3.5rem;
+}
+
+.company .p2 {
+  margin-top: 2rem;
+}
+
+.company .p2 p {
+  margin-top: 3.5rem;
+}
+
+.h1 {
+  margin-bottom: 50px;
+  position: relative;
+  color: grey;
+}
+
+.h1::after {
+  content: '';
+  display: block;
+  height: 2px;
+  margin: 1.5rem auto;
+  background-color: #4A9E00;
+  position: absolute;
+  top: 2.5rem;
+  width: 100%;
+  -webkit-transition: all ease-in-out 250ms;
+  transition: all ease-in-out 250ms;
+}
+
+.h1:hover {
+  color: #4A9E00;
+}
+
+.h1:hover::after {
+  width: 0%;
+}
+
+.head1 {
+  margin: 5rem auto;
+  position: relative;
+  color: grey;
+  text-align: center;
+}
+
+.head1::after {
+  content: '';
+  display: block;
+  height: 2px;
+  margin: 1.5rem auto;
+  background-color: #4A9E00;
+  position: absolute;
+  top: 2.5rem;
+  width: 100%;
+  -webkit-transition: all ease-in-out 250ms;
+  transition: all ease-in-out 250ms;
+}
+
+.head1:hover {
+  color: #4A9E00;
+}
+
+.head1:hover::after {
+  width: 0%;
+}
+
+.team {
+  display: block;
+  margin: 8rem auto 15rem;
+}
+
+.team div {
+  margin: 8rem auto;
+  text-align: left;
+  width: 50%;
+}
+
+.service {
+  margin-top: 15rem;
+}
+
+.service-container {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 70%;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5rem;
+  margin-left: 23%;
+  margin-right: 25%;
+  margin-bottom: 12rem;
+}
+
+.service-container .item {
+  margin: 2rem 0.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+ion-icon {
+  margin-top: 1rem;
+  margin-right: .2rem;
+  font-size: xx-large;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.item h3 {
+  -webkit-box-flex: 9;
+      -ms-flex-positive: 9;
+          flex-grow: 9;
+}
+
+.contact-container {
+  display: -ms-grid;
+  display: grid;
+  width: 80%;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 15%;
+  margin-right: 20%;
+  height: 50rem;
+}
+
+.mailicon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mailicon div {
+  -webkit-box-flex: 9;
+      -ms-flex-positive: 9;
+          flex-grow: 9;
+}
+
+#mailform {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#mailform #name, #mailform #email, #mailform #tel, #mailform textarea {
+  width: 80%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded borders */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical;
+}
+
+#mailform input[type=submit] {
+  background-color: #4A9E00;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: left;
+  width: 20%;
+}
+
+.contact-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-item div {
+  width: 80%;
+  font-size: 1.2rem;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: 0.5rem;
+}
+
+.contact-item div div {
+  -webkit-box-flex: 9;
+      -ms-flex-positive: 9;
+          flex-grow: 9;
+}
+
+.contact-item iframe {
+  width: 90%;
+  height: 90%;
+}
+/*# sourceMappingURL=main.css.map */
