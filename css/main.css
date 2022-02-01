@@ -78,100 +78,6 @@
   display: none;
 }
 
-@media screen and (max-width: 1250px) {
-  .nav-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 810px) {
-  a.icon {
-    display: block;
-    float: right;
-    color: #494d4a;
-    -ms-grid-row: 1;
-    -ms-grid-column: 4;
-    grid-area: icon;
-    margin-top: 2rem;
-    margin-left: 5rem;
-  }
-  .logo > img {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: logo;
-    width: -webkit-min-content;
-    width: -moz-min-content;
-    width: min-content;
-  }
-  .logo {
-    display: block;
-    margin-left: 3rem;
-    margin-top: 2rem;
-  }
-  .logo img {
-    max-width: 18rem;
-    height: auto;
-  }
-  .navbar {
-    display: none;
-  }
-  .navbar.responsive .icon {
-    position: absolute;
-    right: 2.8rem;
-    top: 1.1rem;
-  }
-  .navbar.responsive li {
-    display: block;
-    text-align: center;
-    margin: 0 auto;
-    padding: 0 35%;
-    background-color: #f7f7f7;
-    border: 1.5px solid white;
-  }
-  .navbar.responsive li:hover {
-    background-color: #4A9E00;
-  }
-  .navbar.responsive li:hover a {
-    color: white;
-  }
-  .navbar.responsive li::after {
-    content: '';
-    display: none;
-  }
-  .navbar.responsive li a {
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    margin: 0 0.5rem 0;
-    text-transform: uppercase;
-    width: 4rem;
-    color: #494d4a;
-  }
-  .navbar.responsive {
-    width: 100%;
-    position: relative;
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 4;
-    grid-area: nav;
-    display: block;
-    margin: 0 auto;
-  }
-  .nav-container {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 25% 25% 25% 25%;
-        grid-template-columns: 25% 25% 25% 25%;
-    -ms-grid-rows: auto auto;
-        grid-template-rows: auto auto;
-        grid-template-areas: "logo . . icon" "nav nav nav nav";
-  }
-}
-
 .company {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -460,5 +366,208 @@ footer .address {
 
 #footer-nav li a:hover {
   color: white;
+}
+
+@media screen and (max-width: 1250px) {
+  .nav-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .company {
+    margin: 5rem 2rem;
+  }
+  .company h1 {
+    font-size: 1.3rem;
+  }
+  .company .item {
+    width: 70%;
+  }
+  #logobig {
+    margin-bottom: 5rem;
+  }
+  .team {
+    margin: 7rem auto 9rem;
+  }
+  .team div {
+    margin: 8rem auto;
+    text-align: left;
+    width: 65%;
+  }
+  .contact-container {
+    height: 45rem;
+  }
+  #mailform input[type="submit"] {
+    padding: 12px 5px;
+    width: 40%;
+  }
+  .contact-item div {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  #logobig {
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+  }
+  a.icon {
+    display: block;
+    float: right;
+    color: #494d4a;
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+    grid-area: icon;
+    margin-top: 2rem;
+    margin-left: 5rem;
+  }
+  .logo > img {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: logo;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+  }
+  .logo {
+    display: block;
+    margin-left: 3rem;
+    margin-top: 2rem;
+  }
+  .logo img {
+    max-width: 18rem;
+    height: auto;
+  }
+  .navbar {
+    display: none;
+  }
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 2.8rem;
+    top: 1.1rem;
+  }
+  .navbar.responsive li {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 35%;
+    background-color: #f7f7f7;
+    border: 1.5px solid white;
+  }
+  .navbar.responsive li:hover {
+    background-color: #4A9E00;
+  }
+  .navbar.responsive li:hover a {
+    color: white;
+  }
+  .navbar.responsive li::after {
+    content: '';
+    display: none;
+  }
+  .navbar.responsive li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin: 0 0.5rem 0;
+    text-transform: uppercase;
+    width: 4rem;
+    color: #494d4a;
+  }
+  .navbar.responsive {
+    width: 100%;
+    position: relative;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-area: nav;
+    display: block;
+    margin: 0 auto;
+  }
+  .nav-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 25% 25% 25% 25%;
+        grid-template-columns: 25% 25% 25% 25%;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: "logo . . icon" "nav nav nav nav";
+  }
+  .company {
+    margin: 1.5rem 0;
+  }
+  .company h1 {
+    font-size: 1.1rem;
+  }
+  .company .item {
+    width: 85%;
+  }
+  .team {
+    margin: 6rem auto 6rem;
+  }
+  .team div {
+    margin: 6rem auto;
+    width: 80%;
+  }
+  .service-container {
+    width: 90%;
+    margin-top: 5rem;
+    margin-left: 10%;
+    margin-right: 15%;
+    margin-bottom: 6rem;
+  }
+  .service-container .item {
+    margin: 2rem 0.2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .service-container h3 {
+    font-size: 1.05rem;
+  }
+  #mailform input[type="submit"] {
+    padding: 12px 5px;
+    width: 50%;
+  }
+  .contact-container {
+    display: -ms-grid;
+    display: grid;
+    width: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 40rem;
+  }
+  .contact-item div {
+    font-size: 0.8rem;
+  }
+  footer {
+    height: auto;
+  }
+  footer p {
+    margin-bottom: 2rem;
+  }
+  #footer-nav {
+    padding-top: 1rem;
+  }
+  #footer-nav li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+  }
+  #footer-nav li a {
+    padding: 7px 13px;
+    margin: 0;
+    width: 4rem;
+    color: #ebe8e8;
+  }
+  #footer-nav li a:hover {
+    color: white;
+  }
 }
 /*# sourceMappingURL=main.css.map */
