@@ -20,19 +20,20 @@
         </a>
         <!-- menu icon -->
         <a href="javascript:void(0);" class="icon" onclick="myfunction()">
-        <ion-icon name="menu-outline"></ion-icon></a>                
-    </div>       
-    <!-- navbar--> 
-    <nav class="navbar" id="navbar">
-      <ul>          
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#company">회사소개</a></li>
-        <li><a href="#service">서비스</a></li>
-        <li><a href="#info">정보</a></li>
-        <li ><a href="#contact">Contact</a></li>
-      </ul>      
-    </nav>      
+        <ion-icon name="menu-outline"></ion-icon></a>    
+         <!-- navbar--> 
+        <nav class="navbar" id="navbar">
+          <ul>          
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#company">회사소개</a></li>
+            <li><a href="#service">서비스</a></li>
+            <li><a href="#info">정보</a></li>
+            <li ><a href="#contact">Contact</a></li>
+          </ul>      
+        </nav>      
+    </div>         
   </header>
+  
   <div id="logobig">
   </div>  
 
@@ -176,9 +177,9 @@
   var x = document.getElementById("navbar");
   if (x.className === "navbar") {
     x.className += " responsive";
-  } else {
+    } else {
     x.className = "navbar";
-  }
+    }
 }
 </script>
 </body>
