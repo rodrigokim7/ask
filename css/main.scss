@@ -1,3 +1,14 @@
+.sticky {
+  position: sticky;
+  top: 0;
+  width: 100%;    
+  border-bottom: 2px solid #4A9E00;
+}
+
+body, header {
+  display: initial;
+}
+
 .logo {
   display: inline-block;
   margin-left: 3rem;
@@ -20,14 +31,14 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  background-color: white;
+  z-index: 2;
 }
 
 .navbar {
   list-style-type: none;
   margin-right: 4rem;
   padding: 0;
-  overflow: hidden;
-  background-color: transparent;
   float: right;
   margin-top: 1.5rem;
     
