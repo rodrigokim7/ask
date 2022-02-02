@@ -40,6 +40,21 @@ body, header {
   display: initial;
 }
 
+@font-face {
+  font-family: KOTRA_GOTHIC;
+  src: url("fonts/KOTRA_GOTHIC.ttf");
+  font-family: Chungbuk;
+  src: url("fonts/ChungbukRegular.ttf");
+}
+
+body {
+  font-family: 'Chungbuk', sans-serif;
+}
+
+body p {
+  line-height: 1.5rem;
+}
+
 section {
   scroll-margin-top: 10rem;
 }
@@ -328,6 +343,10 @@ ion-icon {
   cursor: pointer;
   float: left;
   width: 20%;
+}
+
+#mailform textarea:placeholder {
+  font-family: "Chungbuk";
 }
 
 .contact-item {

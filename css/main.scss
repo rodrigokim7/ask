@@ -9,7 +9,6 @@
       background-color: white !important;
     }
   }
-
   a {
     color: #ebe8e8 !important;
     &:hover {color:white !important;}
@@ -34,6 +33,18 @@
 
 body, header {
   display: initial;
+}
+
+@font-face {
+  font-family: KOTRA_GOTHIC; src: url('fonts/KOTRA_GOTHIC.ttf');
+  font-family: Chungbuk; src: url('fonts/ChungbukRegular.ttf');
+} 
+
+body {
+  font-family: 'Chungbuk', sans-serif;
+  p {
+   line-height: 1.5rem;
+  }
 }
 
 section {
@@ -260,6 +271,9 @@ ion-icon {
     float: left;
     width: 20%;
   } 
+  textarea:placeholder {
+    font-family: "Chungbuk";
+  }
 }
 .contact-item {
   display: flex;
