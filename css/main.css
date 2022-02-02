@@ -40,6 +40,10 @@ body, header {
   display: initial;
 }
 
+section {
+  scroll-margin-top: 10rem;
+}
+
 .logo {
   display: inline-block;
   margin-left: 3rem;
@@ -271,6 +275,7 @@ ion-icon {
   margin-left: 15%;
   margin-right: 20%;
   height: 50rem;
+  scroll-margin-top: 20rem;
 }
 
 .mailicon {
@@ -437,6 +442,9 @@ footer .address {
     text-align: left;
     width: 65%;
   }
+  .service-container .item {
+    margin: 1.5rem 0.2rem;
+  }
   .contact-container {
     height: 45rem;
   }
@@ -447,9 +455,27 @@ footer .address {
   .contact-item div {
     font-size: 1rem;
   }
+  section {
+    scroll-margin-top: 15rem;
+  }
+  section.service {
+    scroll-margin-top: 18rem;
+  }
+  section #contact {
+    scroll-margin-top: 25rem;
+  }
 }
 
 @media screen and (max-width: 810px) {
+  section {
+    scroll-margin-top: 22rem;
+  }
+  section.service {
+    scroll-margin-top: 25rem;
+  }
+  section #contact {
+    scroll-margin-top: 32rem;
+  }
   #logobig {
     margin-bottom: 1rem;
     margin-top: 2rem;
@@ -560,7 +586,7 @@ footer .address {
     margin-bottom: 6rem;
   }
   .service-container .item {
-    margin: 2rem 0.2rem;
+    margin: 1rem 0.2rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
