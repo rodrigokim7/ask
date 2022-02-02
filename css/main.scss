@@ -2,7 +2,34 @@
   position: sticky;
   top: 0;
   width: 100%;    
+  background-color: #4A9E00 !important;
   border-bottom: 2px solid #4A9E00;
+  li {
+    &::after {
+      background-color: white !important;
+    }
+  }
+
+  a {
+    color: #ebe8e8 !important;
+    &:hover {color:white !important;}
+  }
+
+  .navbar.responsive li {
+    background-color:#4A9E00;
+    border: 0;  
+    &:hover {
+      border-bottom: 1.5px solid white !important;
+    } 
+
+  }
+  .navbar.responsive {
+    width : 100%;  
+    position: relative;
+    grid-area: nav; 
+    display: block;
+    margin: 0 auto;    
+  }
 }
 
 body, header {

@@ -16,7 +16,7 @@
     <div class="nav-container"  id="sticky-h">
         <!-- logo -->
         <a href="index.html" class="logo">
-            <img src="images/logo.png" alt="logo">
+            <img src="images/logo.png" alt="logo" id="logoimg">
         </a>
         <!-- menu icon -->
         <a href="javascript:void(0);" class="icon" onclick="myfunction()">
@@ -187,13 +187,16 @@
 window.onscroll = function() {navscroll()};
 
 var sheader = document.getElementById("sticky-h");
+var logo = document.getElementById("logoimg");
 var sticky = (sheader.offsetHeight)*0.5;
 
 function navscroll() {
   if (window.pageYOffset >= sticky) {
     sheader.classList.add("sticky")
+    logoimg.src = "images/logowhite.png"
   } else {
     sheader.classList.remove("sticky");
+    logoimg.src = "images/logo.png"
   }
 }
 </script>
