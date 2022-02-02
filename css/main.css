@@ -315,7 +315,7 @@ ion-icon {
           flex-direction: column;
 }
 
-#mailform #name, #mailform #email, #mailform #tel, #mailform textarea {
+#mailform #name, #mailform #email, #mailform #tel, #mailform #title, #mailform textarea {
   width: 80%;
   /* Full width */
   padding: 12px;
