@@ -434,6 +434,35 @@ footer .address {
   color: white;
 }
 
+.email h3 {
+  line-height: 3rem;
+  margin-top: 5rem;
+  color: #4A9E00;
+}
+
+@media screen and (max-width: 810px) {
+  .email h3 {
+    font-size: 1rem;
+  }
+}
+
+.email .button {
+  display: block;
+  background-color: #4A9E00;
+  text-decoration: none;
+  color: white;
+  padding: 15px 15px;
+  width: 50%;
+  height: auto;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.email .button:hover {
+  background-color: #ccc;
+  color: #4A9E00;
+}
+
 @media screen and (max-width: 1250px) {
   .nav-container {
     -webkit-box-orient: vertical;

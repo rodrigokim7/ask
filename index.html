@@ -90,7 +90,7 @@
     <section class="service" id="service">
       <h1 class="head1">A.S.K Paraguay 서비스</h1>
       <div class="service-container">
-        <div class="item"><ion-icon name="cash-outline" ></ion-icon><h3 >송금/금융</h3></div>
+        <div class="item"><ion-icon name="cash-outline"></ion-icon><h3>송금/금융</h3></div>
         <div class="item"><ion-icon name="business-outline"></ion-icon><h3>회사설립</h3></div>
         <div class="item"><ion-icon name="person-circle-outline"></ion-icon><h3>영주권 발급</h3></div>
         <div class="item"><ion-icon name="bar-chart-outline"></ion-icon><h3>투자 컨설팅</h3></div>
@@ -108,20 +108,21 @@
     <section>
       <h1 class="head1">Contact</h1>
       <div class="contact-container" id="contact">
+
           <div class="email">
             <div class="mailicon">
               <ion-icon name="mail-outline"></ion-icon><div><h4>info@askparaguay.com</h4></div>
             </div>
-            <form action="mail.php" id="mailform">
-              <input type="text" name="name" id="name" placeholder="이름">
-              <input type="email" name="email" id="email" placeholder="이메일">
+            <form action="php/mail.php" method="POST" class="form" id="mailform">
+              <input type="text" name="name" id="name" placeholder="이름*" required>
+              <input type="email" name="email" id="email" placeholder="이메일*" required>
               <input type="tel" name="tel" id="tel" placeholder="전화번호">
-              <input type="text" name="title" id="title" placeholder="제목">
-              <textarea name="inquiry" id="inq" cols="30" rows="15" placeholder="문의내용"></textarea>
+              <input type="text" name="title" id="title" placeholder="제목*" required>
+              <textarea name="inquiry" id="inq" cols="30" rows="15" placeholder="문의내용*" required></textarea>
               <input type="submit" value="문의보내기" id="sub">
             </form>
           </div>
-          
+
           <div class="contact-item">
             <div>
               <ion-icon name="call-outline" style="margin-top: 0.5rem;"></ion-icon>
@@ -200,6 +201,8 @@ function navscroll() {
     logoimg.src = "images/logo.png"
   }
 }
+
 </script>
+
 </body>
 </html>
