@@ -1,36 +1,32 @@
 <?php
- $inquiry_sent = false;
 
+include('SMTPconfig.php');
+ 
  if($_POST && isset($_POST['name'],$_POST['email'],$_POST['inquiry'],$_POST['title'])) {
 
   // submit the form
    if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
      //Validate the email
+    $Title = "=?EUC-KR?B?".base64_encode(iconv("UTF-8","EUC-KR",htmlspecialchars($_POST['title'])))."?=";
+    $Inquiry = "=?EUC-KR?B?".base64_encode(iconv("UTF-8","EUC-KR",htmlspecialchars($_POST['inquiry'])))."?=";
+    $Email = htmlspecialchars($_POST['email']);
+    $Name = "=?EUC-KR?B?".base64_encode(iconv("UTF-8","EUC-KR",htmlspecialchars($_POST['name'])))."?=";
 
-    $userName = $userEmail = $userTel = $title = $inquiry = "";
+    $mail->subject = $Title;
+    $mail->message = $Inquiry;
+    $mail->from($Email, $Name);
+    $mail->to('info@askparaguay.com', 'A.S.K Paraguay');
 
-    $userName = htmlspecialchars($_POST['name']);
-    $userEmail = htmlspecialchars($_POST['email']);
-    $userTel = htmlspecialchars($_POST['tel']);
-    $title = htmlspecialchars($_POST['title']);
-    $inquiry = htmlspecialchars($_POST['inquiry']);
-    
-    $to = "info@askparaguay.com";
-    $content = "";
-    
-    $content .= "From: ".$userName. "\r\n";
-    $content .= "Email: ".$userEmail. "\r\n";
-    $content .= "Tel: ".$userTel. "\r\n";
-    $content .= "Title: ".$title. "\r\n";
-    $content .= "Inquiry: ".$inquiry. "\r\n";
-    
-    mail($to, $title, $content);
-    
-    session_start();
-    $_SESSION['USER'] = $userName;
-    header ('location: ../thankyou.php');
-
+    if ($mail->send())
+    {      
+      session_start();
+      $_SESSION['USER'] = htmlspecialchars($_POST['name']);
+      header('location:../thankyou.php');
+    }
+    else echo $mail->error;    
    } 
  }
+   
+ 
 
 ?>
