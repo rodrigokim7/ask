@@ -25,10 +25,10 @@
         <nav class="navbar" id="navbar">
           <ul>          
             <li><a href="index.html">Home</a></li>
-            <li><a href="#company">회사소개</a></li>
-            <li><a href="#service">서비스</a></li>
-            <li><a href="#info">정보</a></li>
-            <li ><a href="#contact">Contact</a></li>
+            <li><a href="index.html#company">회사소개</a></li>
+            <li><a href="index.html#service">서비스</a></li>
+            <li><a href="index.html#info">정보</a></li>
+            <li ><a href="index.html#contact">Contact</a></li>
           </ul>      
         </nav>      
     </div>     
@@ -83,10 +83,10 @@
         <nav id="footer-nav">
           <ul >          
             <li><a href="index.html">Home</a></li>
-            <li><a href="#company">회사소개</a></li>
-            <li><a href="#service">서비스</a></li>
-            <li><a href="#info">정보</a></li>
-            <li ><a href="#contact">Contact</a></li>
+            <li><a href="index.html#company">회사소개</a></li>
+            <li><a href="index.html#service">서비스</a></li>
+            <li><a href="index.html#info">정보</a></li>
+            <li ><a href="index.html#contact">Contact</a></li>
           </ul>      
         </nav>             
     </div>  

@@ -18,7 +18,7 @@ class SimpleMail {
 	// mail content type
 	public $type = 'text/html';
 	// mail encoding
-	public $encoding = 'UTF-8';
+	public $encoding = 'EUC-KR';
 	// error message
 	public $error;
 	// print results
@@ -33,10 +33,7 @@ class SimpleMail {
 	 * @param  string $name    sender name
 	 * @return void
 	 */
-	public function from($address, $name = null) {
-		if (empty($name))
-			$this->from = '<' . $address . '>';
-		else
+	public function from($address, $name) {
 			$this->from = '"' . $name . '" <' . $address . '>';
 	}
 	/**
@@ -45,10 +42,7 @@ class SimpleMail {
 	 * @param  string $name    sender name
 	 * @return void
 	 */
-	public function to($address, $name = null) {
-		if (empty($name))
-			$this->to[] = '<' . $address . '>';
-		else
+	public function to($address, $name) {
 			$this->to[] = '"' . $name . '" <' . $address . '>';
 	}
 	/**

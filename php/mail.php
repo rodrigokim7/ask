@@ -8,7 +8,7 @@ include('SMTPconfig.php');
    if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
      //Validate the email
     $Title = "=?EUC-KR?B?".base64_encode(iconv("UTF-8","EUC-KR",htmlspecialchars($_POST['title'])))."?=";
-    $Inquiry = "=?EUC-KR?B?".base64_encode(iconv("UTF-8","EUC-KR",htmlspecialchars($_POST['inquiry'])))."?=";
+    $Inquiry = htmlspecialchars($_POST['inquiry']);
     $Email = htmlspecialchars($_POST['email']);
     $Name = "=?EUC-KR?B?".base64_encode(iconv("UTF-8","EUC-KR",htmlspecialchars($_POST['name'])))."?=";
 
