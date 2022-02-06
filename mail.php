@@ -28,7 +28,6 @@ $mail = new PHPMailer(true);
     $mail->addAddress('shkim@askparaguay.com', 'SHKIM-ASK PY');  //Name is optional
     $mail->addReplyTo('rodrigokim7@gmail.com', 'Information'); 
 
-출처: https://mosei.tistory.com/entry/PHP-mail-함수-사용-시-한글-깨짐-문제 [씹어먹는 블로그]
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
     $mail->Subject = "=?EUC-KR?B?".base64_encode(iconv("UTF-8","EUC-KR",$_POST['title']))."?=";     
