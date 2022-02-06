@@ -74,7 +74,7 @@ class PHPMailer
      *
      * @var string
      */
-    public $CharSet = 'UTF-8';
+    public $CharSet = 'EUC-KR';
 
     /**
      * The MIME Content-type of the message.
@@ -89,7 +89,7 @@ class PHPMailer
      *
      * @var string
      */
-    public $Encoding = self::ENCODING_8BIT;
+    public $Encoding = self::ENCODING_BASE64;
 
     /**
      * Holds the most recent mailer error message.
@@ -2775,7 +2775,7 @@ class PHPMailer
 
         $this->setWordWrap();
 
-        $bodyEncoding = $this->Encoding;
+        /**$bodyEncoding = $this->Encoding;
         $bodyCharSet = $this->CharSet;
         //Can we do a 7-bit downgrade?
         if (static::ENCODING_8BIT === $bodyEncoding && !$this->has8bitChars($this->Body)) {
@@ -2802,6 +2802,9 @@ class PHPMailer
         if (static::ENCODING_BASE64 !== $altBodyEncoding && static::hasLineLongerThanMax($this->AltBody)) {
             $altBodyEncoding = static::ENCODING_QUOTED_PRINTABLE;
         }
+        **/
+
+        /**
         //Use this as a preamble in all multipart message types
         $mimepre = 'This is a multi-part message in MIME format.' . static::$LE . static::$LE;
         switch ($this->message_type) {
@@ -2979,7 +2982,7 @@ class PHPMailer
                 $body .= $this->encodeString($this->Body, $this->Encoding);
                 break;
         }
-
+**/
         if ($this->isError()) {
             $body = '';
             if ($this->exceptions) {
@@ -3049,6 +3052,7 @@ class PHPMailer
      *
      * @return string
      */
+    /*
     protected function getBoundary($boundary, $charSet, $contentType, $encoding)
     {
         $result = '';
@@ -3072,7 +3076,7 @@ class PHPMailer
 
         return $result;
     }
-
+*/
     /**
      * Return the end of a message boundary.
      *
@@ -3150,6 +3154,7 @@ class PHPMailer
      *
      * @return bool
      */
+    /*
     public function addAttachment(
         $path,
         $name = '',
@@ -3219,6 +3224,7 @@ class PHPMailer
      *
      * @return string
      */
+    /*
     protected function attachAll($disposition_type, $boundary)
     {
         //Return text of body
@@ -3319,7 +3325,7 @@ class PHPMailer
 
         return implode('', $mime);
     }
-
+*/
     /**
      * Encode a file attachment in requested format.
      * Returns an empty string on failure.
